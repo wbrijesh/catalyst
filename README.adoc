@@ -1,0 +1,48 @@
+= Database Manager
+
+Having to ssh into database server to manually manage it is tedious, this project attempts to automate that and have a GUI for ease of use.
+
+As features are added to this project, this README will be updated to reflect that.
+
+== Getting Started
+
+This project is under development and not ready for use, once it is ready, steps below will be updated along with some basic documentation.
+
+=== Install Required Packages
+
+[source,bash]
+----
+# Install required packages for server and client
+make package-install
+----
+
+=== Server Actions
+
+[source,bash]
+----
+# Build Go binary for the server
+make server-build
+
+# Run the server
+make server-run
+
+# Clean up binary of the server
+make server-clean
+
+# Live reload the server (meant for development)
+make server-watch
+----
+
+=== Client Actions
+
+[source,bash]
+----
+# Build the client
+make client-build
+
+# Clean up client build
+make client-clean
+
+# Run the client with hot reload
+make client-watch
+----
